@@ -1,0 +1,106 @@
+/* Start General Rules */
+
+:root {
+    --light: #fff;
+    --fadebg: #0000007d;
+    --border: 1px solid var(--light, #fff);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Slab', 'Helvetica', 'Arial', "Helvetica Neue", sans-serif;
+    font-size: 15px;
+}
+
+body {
+    color: var(--light, #fff);
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    height: auto;
+    font-weight: bold;
+    background: url(../media/beach-deck-dock-247447.jpg) center center no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+
+/* End General Rules */
+
+/* Start Main Rules */
+
+main {
+    display: grid;
+    grid-gap: 1.5rem;
+    background-color: var(--fadebg, #0000007d);
+    min-width: 300px;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 5rem;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-family: "Amatic SC";
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 5px #000;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+li {
+    text-indent: 15px;
+    list-style: inside;
+    font-size: 1.3rem;
+}
+
+p > span {
+    color: rgba(255, 6, 25, 0.93);
+    font-family: 'Fredericka the Great';
+    letter-spacing: 1px;
+    font-size: 140%;
+}
+
+p i {
+    color: rgba(255, 6, 25, 0.93);
+    padding-right: 0.5rem;
+    font-size: 40px;
+    -webkit-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.btn {
+    color: var(--light);
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: rgba(255, 6, 25, 0.93);
+    border: var(--border);
+    border-radius: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+/* End Main Rules */
